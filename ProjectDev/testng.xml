@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/dothu/IdeaProjects/ProjectDev">
+        <classes>
+<!--chạy toàn bộ POM-->
+            <class name="Good.testscripts.LoginScrt">
+                <methods><include name="TC01_Successfully"/>
+                    <include name="TC02_EmailFail"/>
+                    <include name="TC03_PassFail"/>
+                    <include name="TC04_WrongPass"/>
+                    <include name="TC05_WrongEmail"/>
+                    <include name="TC06_Wrong"/>
+                </methods>
+            </class>
+            <class name="Good.testscripts.AddPageScrt"><methods>
+                <include name="TC01_Suc"/>
+                <include name="TC02_Product"/>
+                <include name="TC03_Name"/>
+                <include name="TC04_Cate"/>
+                <include name="TC05_Intro"/>
+                <include name="TC06_Price"/>
+                <include name="TC07_Fee"/>
+                <include name="TC08_Price"/>
+                <include name="TC09_Price"/>
+                <include name="TC10_Exited"/>
+            </methods>
+            </class>
+
+            <class name="Good.testscripts.OutpageScrt">
+            <methods><include name="TestOutCancel"/>
+                <include name="TestOut"/></methods>
+        </class>
+        </classes>
+    </test>
+</suite>
